@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/images/Star.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#loginContainer {
+    width: 80%; /* Smaller width for responsiveness */
+    max-width: 300px; /* Limit maximum width */
+    min-height: 400px;
+    margin: 20px auto;
+    padding: 10px; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background: #070000;
+    display: flex; /* Added display flex */
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center children vertically */
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.1rem; /* Relative font size */
+    color: #1DA1F2; /* Twitter blue color */
+}
+
+label {
+    margin-top:5px;
+    color:#fff;
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem; /* Relative font size */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Reduced margin */
+    box-sizing: border-box;
+    font-size: 0.9rem; /* Relative font size */
+}
+
+input {
+
+margin-top:10px;
+}
+
+#button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #1DA1F2; /* Twitter blue color */
+    color: #fff;
+    font-size: 0.7rem; /* Relative font size */
+    cursor: pointer;
+    margin-bottom: 8px; /* Reduced margin between buttons */
+}
+
+#spacer {
+    padding:21px;
+    font-size:13px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align links to the left */
+    margin-top: 10px; /* Add spacing between buttons and links */
+}
+
+
+button:hover {
+    background: #0D8CEA; /* Slightly darker blue on hover */
+}
+
+#align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:left !important;
+ }
+
+ table{
+ border: 1px solid lightblue;
+ margin: 25px 0;
+ font-size: 0.9em;
+ font-family: sans-serif;
+ min-width: 400px;
+ box-shadow:  0 0 20px rgba(0, 0, 0, 0.15);
+ }
+
+ tr{
+    background-color: #009879;
+    color: #fff;
+    text-align: left;
+
+ }
+
+ th,td{
+ padding: 12px 15px;
+ }
+
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    #loginContainer {
+        margin: 50px auto; /* Adjust margin for smaller screen sizes */
+        padding: 10px; /* Reduce padding for smaller screen sizes */
+    }
+
+    h3 {
+      
+        font-size: 0.55rem; /* Adjust heading font size for smaller screen sizes */
+    }
+
+    label,
+    input[type="text"],
+    input[type="password"],
+    button {
+        font-size: 0.4rem; /* Adjust font size for smaller screen sizes */
+    }
+
+   
+}

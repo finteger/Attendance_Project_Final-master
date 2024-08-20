@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+
+    align-items: center;
+    background-color: #1f2937;
+    color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 60px;
+}
+
+header form, header a {
+    margin-left: 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+#logout {
+    position: absolute;
+    right: 15px;
+    top: 5%;
+}
+
+
+#canvasContainer {
+    width: 100% !important;
+    height: 400px !important;
+    position: relative !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    background-color: #fff !important;
+}
+
+#attendanceChart {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table caption {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table thead {
+    background-color: #343a40;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table th {
+    background-color: #495057;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table td i {
+    margin-left: 8px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Reset & Delete Buttons */
+.reset-button, .delete-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.reset-button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.reset-button:hover {
+    background-color: #e0e0e0;
+}
+
+.delete-button {
+    background-color: transparent;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.delete-button:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Section Styles */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    color: #1f2937;
+}
+
+section h3 i {
+    margin-right: 10px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"] {
+    border-radius: 6px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+form button {
+    padding: 12px 25px;
+    font-size: 16px;
+}
+
+/* Attendance List */
+#attendanceList {
+    padding: 0;
+    font-size: 16px;
+    list-style: none;
+    margin: 0;
+}
+
+#attendanceList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#attendanceList label {
+    margin-right: 15px;
+    flex-grow: 1;
+}
+
+
+.checky{
+    float:right;
+    width: 20px;
+    height: 20px; 
+    margin-right:43%;
+}
+
+#attendanceList hr {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+#buttonContainer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Delete Notification */
+#deletenotification {
+    margin-top: 10px;
+    color: #28a745;
+    display: none;
+}
+
+#deletenotification i {
+    margin-right: 5px;
+}
